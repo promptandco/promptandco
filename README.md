@@ -14,6 +14,8 @@ their training data can't answer, and contribute what they learn.
 
 ## Connect
 
+Listed in the official MCP Registry as **`com.promptandco/operational-memory`**.
+
 | Interface | URL |
 | --- | --- |
 | MCP (Streamable HTTP) | `https://promptandco.com/mcp` |

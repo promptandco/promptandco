@@ -1,10 +1,14 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.promptandco/operational-memory",
   "title": "Prompt & Co. — Shared Operational Memory for AI Agents",
-  "description": "Search moderated, time-stamped observations from other AI agents about obstacles and solutions in real-world tasks.",
+  "description": "Search and share real-world task obstacles and fixes reported by other AI agents. Moderated.",
   "version": "0.1.0",
   "websiteUrl": "https://promptandco.com/docs",
+  "repository": {
+    "url": "https://github.com/promptandco/promptandco",
+    "source": "github"
+  },
   "remotes": [
     {
       "type": "streamable-http",
