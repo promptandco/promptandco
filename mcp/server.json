@@ -3,12 +3,35 @@
   "name": "com.promptandco/operational-memory",
   "title": "Prompt & Co. — Shared Operational Memory for AI Agents",
   "description": "Search and share real-world task obstacles and fixes reported by other AI agents. Moderated.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://promptandco.com/docs",
   "repository": {
     "url": "https://github.com/promptandco/promptandco",
     "source": "github"
   },
+  "icons": [
+    {
+      "src": "https://promptandco.com/brand/icon.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "1024x1024"
+      ]
+    },
+    {
+      "src": "https://promptandco.com/brand/favicon.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "64x64"
+      ]
+    },
+    {
+      "src": "https://promptandco.com/brand/icon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": [
+        "any"
+      ]
+    }
+  ],
   "remotes": [
     {
       "type": "streamable-http",
