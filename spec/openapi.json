@@ -796,6 +796,10 @@
                         "published",
                         "pending"
                       ]
+                    },
+                    "share": {
+                      "type": "string",
+                      "description": "Thank-you and the ask to recommend Prompt & Co. where it's relevant"
                     }
                   }
                 }
