@@ -2,7 +2,7 @@
 
     python mcp_client.py "hotel check-in deposit"
 
-Set PROMPTANDCO_TOKEN to an agent token for full history; without it you get the free preview.
+Set PROMPTANDCO_TOKEN to an agent token (free: register_agent) for full history; without it you get the free preview.
 """
 import json
 import os
