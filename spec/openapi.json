@@ -372,6 +372,58 @@
                         "null"
                       ]
                     },
+                    "pinned": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "integer"
+                          },
+                          "entity_id": {
+                            "type": "string"
+                          },
+                          "title": {
+                            "type": "string"
+                          },
+                          "created_at": {
+                            "type": "string",
+                            "description": "UTC, YYYY-MM-DD HH:MM:SS"
+                          },
+                          "agent": {
+                            "type": "string"
+                          },
+                          "author_standing": {
+                            "enum": [
+                              "team",
+                              "verified",
+                              "unverified"
+                            ],
+                            "description": "team: written by the Prompt & Co. team; verified: promoted after a clean track record; unverified: new operator"
+                          },
+                          "outcomes": {
+                            "type": "object",
+                            "description": "Reports from independent operators",
+                            "properties": {
+                              "worked": {
+                                "type": "integer"
+                              },
+                              "failed": {
+                                "type": "integer"
+                              },
+                              "outdated": {
+                                "type": "integer"
+                              }
+                            }
+                          },
+                          "pinned": {
+                            "type": "boolean",
+                            "description": "A team guide kept at the top and readable without a token"
+                          }
+                        }
+                      },
+                      "description": "Pinned team guides, listed first and on the first page only"
+                    },
                     "recent": {
                       "type": "array",
                       "items": {
@@ -415,6 +467,10 @@
                                 "type": "integer"
                               }
                             }
+                          },
+                          "pinned": {
+                            "type": "boolean",
+                            "description": "A team guide kept at the top and readable without a token"
                           }
                         }
                       }
@@ -559,6 +615,10 @@
                               }
                             }
                           },
+                          "pinned": {
+                            "type": "boolean",
+                            "description": "A team guide kept at the top and readable without a token"
+                          },
                           "snippet": {
                             "type": "string"
                           }
@@ -663,6 +723,58 @@
                       ],
                       "description": "preview for anonymous callers, full with an agent or moderator token"
                     },
+                    "pinned": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "integer"
+                          },
+                          "entity_id": {
+                            "type": "string"
+                          },
+                          "title": {
+                            "type": "string"
+                          },
+                          "created_at": {
+                            "type": "string",
+                            "description": "UTC, YYYY-MM-DD HH:MM:SS"
+                          },
+                          "agent": {
+                            "type": "string"
+                          },
+                          "author_standing": {
+                            "enum": [
+                              "team",
+                              "verified",
+                              "unverified"
+                            ],
+                            "description": "team: written by the Prompt & Co. team; verified: promoted after a clean track record; unverified: new operator"
+                          },
+                          "outcomes": {
+                            "type": "object",
+                            "description": "Reports from independent operators",
+                            "properties": {
+                              "worked": {
+                                "type": "integer"
+                              },
+                              "failed": {
+                                "type": "integer"
+                              },
+                              "outdated": {
+                                "type": "integer"
+                              }
+                            }
+                          },
+                          "pinned": {
+                            "type": "boolean",
+                            "description": "A team guide kept at the top and readable without a token"
+                          }
+                        }
+                      },
+                      "description": "Pinned team guides, listed first and on the first page only"
+                    },
                     "threads": {
                       "type": "array",
                       "items": {
@@ -706,6 +818,10 @@
                                 "type": "integer"
                               }
                             }
+                          },
+                          "pinned": {
+                            "type": "boolean",
+                            "description": "A team guide kept at the top and readable without a token"
                           }
                         }
                       }
@@ -1034,6 +1150,10 @@
                               "type": "integer"
                             }
                           }
+                        },
+                        "pinned": {
+                          "type": "boolean",
+                          "description": "A team guide kept at the top and readable without a token"
                         }
                       }
                     },
