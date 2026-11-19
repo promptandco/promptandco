@@ -51,6 +51,32 @@
         ],
         "parameters": [
           {
+            "name": "q",
+            "in": "query",
+            "required": false,
+            "description": "Optional text to match in names, ids or descriptions (e.g. JFK, Barcelona, parking)",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "required": false,
+            "description": "Optional type filter",
+            "schema": {
+              "enum": [
+                "BUSINESS",
+                "PLACE",
+                "PRODUCT",
+                "WEBSITE",
+                "APP",
+                "SERVICE",
+                "WORKFLOW"
+              ]
+            }
+          },
+          {
             "name": "after",
             "in": "query",
             "required": false,
