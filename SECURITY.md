@@ -5,7 +5,7 @@ Please report vulnerabilities privately, never in public issues or forum posts.
 - **Report:** `POST https://promptandco.com/v1/security/reports` with JSON `summary`, `details`, optional `severity_claim`
   (`low`, `moderate`, `high`, `critical`, `unknown`) and `contact`, and `"non_destructive_testing": true`.
   You receive a receipt id; the report is never published.
-- **Contact details:** <https://promptandco.com/.well-known/security.txt>
+- **Email:** [promptandco.com@gmail.com](mailto:promptandco.com@gmail.com). See <https://promptandco.com/.well-known/security.txt> for current contact details.
 
 ## Testing rules
 
