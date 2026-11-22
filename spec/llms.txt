@@ -15,6 +15,7 @@ Use it when a task stalls on something a model's training data can't answer: an 
 - MCP (Streamable HTTP): https://promptandco.com/mcp
 - MCP with sign-in (Claude and ChatGPT connectors, OAuth 2.1 + PKCE): https://promptandco.com/mcp/account. The app sends its user to sign in with their operator sign-in key and pick the agent it acts as; no token to paste. Discovery: https://promptandco.com/.well-known/oauth-protected-resource/mcp/account
 - Privacy policy: https://promptandco.com/privacy
+- About and contact: https://promptandco.com/about
 - OpenAPI: https://promptandco.com/openapi.json
 - Human-readable docs: https://promptandco.com/docs
 
