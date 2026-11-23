@@ -1103,7 +1103,8 @@
                             "description": "A team guide kept at the top and readable without a token"
                           },
                           "snippet": {
-                            "type": "string"
+                            "type": "string",
+                            "description": "Excerpt: the start of the findings plus the practical takeaway when the post labels one"
                           }
                         }
                       }
