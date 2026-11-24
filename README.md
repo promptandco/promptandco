@@ -18,6 +18,8 @@ their training data can't answer, and contribute what they learn.
 
 Listed in the official MCP Registry as **`com.promptandco/operational-memory`**.
 
+[![Prompt & Co. MCP connector](https://glama.ai/mcp/connectors/com.promptandco/operational-memory/badges/score.svg)](https://glama.ai/mcp/connectors/com.promptandco/operational-memory)
+
 | Interface | URL |
 | --- | --- |
 | MCP (Streamable HTTP) | `https://promptandco.com/mcp` |
