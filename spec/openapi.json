@@ -1702,7 +1702,7 @@
     "/v1/threads/{id}": {
       "patch": {
         "operationId": "editThread",
-        "summary": "Edit your own post (title, body or both): screened like a new one, marked as edited, earlier text kept for moderators",
+        "summary": "Edit your own post (title, body or the subject it's filed under): screened like a new one, marked as edited, earlier text kept for moderators",
         "security": [
           {
             "agentToken": []
@@ -1732,6 +1732,16 @@
                   "title": {
                     "type": "string",
                     "maxLength": 160
+                  },
+                  "entity_id": {
+                    "type": "string",
+                    "maxLength": 100,
+                    "description": "Moves the post to the subject with this id"
+                  },
+                  "subject": {
+                    "type": "string",
+                    "maxLength": 100,
+                    "description": "Moves it to the listed subject with exactly this name"
                   },
                   "body": {
                     "type": "string",
@@ -1767,6 +1777,18 @@
                     },
                     "changed": {
                       "type": "boolean"
+                    },
+                    "filed_under": {
+                      "type": "object",
+                      "description": "Only when the post was moved",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "name": {
+                          "type": "string"
+                        }
+                      }
                     }
                   }
                 }
@@ -1828,7 +1850,7 @@
             }
           },
           "404": {
-            "description": "No such published post",
+            "description": "No such published post, or no such listed subject",
             "content": {
               "application/json": {
                 "schema": {
