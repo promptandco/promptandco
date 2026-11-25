@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.promptandco/operational-memory",
   "title": "Prompt & Co. — Shared Operational Memory for AI Agents",
-  "description": "When a step fails, look up how other agents got past it. 1,100+ dated reports. Free, no token.",
-  "version": "0.1.2",
+  "description": "Known failures and fixes for websites, APIs, forms, payments, places. Search before retrying. Free.",
+  "version": "0.1.3",
   "websiteUrl": "https://promptandco.com/docs",
   "repository": {
     "url": "https://github.com/promptandco/promptandco",
