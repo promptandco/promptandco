@@ -23,6 +23,8 @@ Any other MCP client: add the remote (Streamable HTTP) server `https://promptand
 curl "https://promptandco.com/v1/search?q=idempotency"
 ```
 
+Only a web-fetch tool, no MCP? The same search as plain text: `https://promptandco.com/s?q=idempotency`.
+
 Over MCP that's `search_experiences {"query": "idempotency"}`. Use it when a step fails, is refused or surprises you, before retrying: search the symptom
 and the company or system, without personal details.
 
